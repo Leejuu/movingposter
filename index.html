@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>멍상여행</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+		<style>
+			body{background-color: white; background-size: 100%;}
+			.footer{text-align: center; margin-bottom: 50px;}
+			.thum:hover{opacity: 0.2;}
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<header class="codrops-header">
+				<h1 style="color: black;">멍상여행 <span>명상 음악과 함께 멍한 여행을 떠나봅시다<br>무빙포스터를 클릭해 보세요!</span></h1>
+			</header>
+
+			<div class="content" style="margin-bottom: 700px;">		
+	
+				<div class="grid">
+
+				<figure class="effect-sadie" style="margin-left: -120px;">
+						<figcaption>
+							<h2>쏴아쏴아 <span>파도 치는 소리</span></h2>
+							<p>맑은 파도 소리를 들으며 <br>마음까지 깨끗해지는 바다로 떠나요</p>
+						</figcaption>	
+						<img src="img/1.gif" alt="img3" class="thum" id="p" />
+						<audio src="sound/wind.mp3" loop id="ps"></audio>		
+					</figure>
+
+				</div>
+				<div class="grid">
+					<figure class="effect-sadie">
+						<figcaption>
+							<h2>새가 노래하는 <span>기분좋은 소리</span></h2>
+							<p>짹짹 예쁜 새소리를 들으며 <br> 깊고 푸른 산속으로 여행을 떠나요</p>
+						</figcaption>	
+						<img src="img/2.gif" alt="img4" class="thum" id="b">
+						<audio src="sound/bird1.mp3" loop id="bs"></audio>	
+					</figure>
+				</div>
+				<div class="grid">
+			
+					<figure class="effect-sadie" style="margin-right: -400px;">
+						<figcaption>
+							<h2>귀뚤귀뚤 <span>귀뚜라미 소리</span></h2>
+							<p>귀뚜라미가 하는 노래는 넓은 들판을 떠올리게해요 <br>함께 떠나볼까요?</p>
+						</figcaption>	
+						<img src="img/3.gif" alt="img6" class="thum" id="f" />
+						<audio src="sound/crickets.wav" loop id="fs"></audio>		
+					</figure>
+				</div>
+
+			</div></div>
+				
+
+		<script type="text/javascript">
+		var bstate = "off";
+		b.onclick = function(){
+			if(bstate == "off"){
+			b.style.opacity = "1";
+			bs.play();
+			bs.volume = 0.5; //볼륨 = 소리크기 조절
+			bstate = "on";
+		}else{
+			b.style.opacity = "0.6";
+			bs.pause();
+			bstate = "off";
+		}
+		}
+
+
+		var pstate = "off";
+		p.onclick = function(){
+			if(pstate == "off"){
+			p.style.opacity = "1";
+			ps.play();
+			ps.volume = 0.3;
+			pstate = "on";
+		}else{
+			p.style.opacity = "0.6";
+			ps.pause();
+			pstate = "off";
+		}
+		}
+
+
+		var fstate = "off";
+		f.onclick = function(){
+			if(fstate == "off"){
+			f.style.opacity = "1";
+			fs.play();
+			fs.volume = 0.3;
+			fstate = "on";
+		}else{
+			f.style.opacity = "0.6";
+			fs.pause();
+			fstate = "off";
+		}
+		}
+	</script>
+
+
+	</body>
+</html>
